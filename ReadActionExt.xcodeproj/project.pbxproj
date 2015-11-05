@@ -15,6 +15,10 @@
 		8580221F1BEB01D400581457 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8580221D1BEB01D400581457 /* LaunchScreen.storyboard */; };
 		8580222A1BEB01D400581457 /* ReadActionExtTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 858022291BEB01D400581457 /* ReadActionExtTests.m */; };
 		858022351BEB01D400581457 /* ReadActionExtUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 858022341BEB01D400581457 /* ReadActionExtUITests.m */; };
+		8580224A1BEB020000581457 /* ActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 858022491BEB020000581457 /* ActionViewController.m */; };
+		8580224D1BEB020000581457 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8580224B1BEB020000581457 /* MainInterface.storyboard */; };
+		858022511BEB020000581457 /* Read.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 858022461BEB020000581457 /* Read.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		858022571BEB312200581457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8580221B1BEB01D400581457 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +36,28 @@
 			remoteGlobalIDString = 8580220B1BEB01D400581457;
 			remoteInfo = ReadActionExt;
 		};
+		8580224F1BEB020000581457 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 858022041BEB01D400581457 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 858022451BEB020000581457;
+			remoteInfo = Read;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		858022551BEB020000581457 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				858022511BEB020000581457 /* Read.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8580220C1BEB01D400581457 /* ReadActionExt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadActionExt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +76,11 @@
 		858022301BEB01D400581457 /* ReadActionExtUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReadActionExtUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		858022341BEB01D400581457 /* ReadActionExtUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadActionExtUITests.m; sourceTree = "<group>"; };
 		858022361BEB01D400581457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		858022461BEB020000581457 /* Read.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Read.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		858022481BEB020000581457 /* ActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionViewController.h; sourceTree = "<group>"; };
+		858022491BEB020000581457 /* ActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionViewController.m; sourceTree = "<group>"; };
+		8580224C1BEB020000581457 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		8580224E1BEB020000581457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +105,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		858022431BEB020000581457 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,6 +121,7 @@
 				8580220E1BEB01D400581457 /* ReadActionExt */,
 				858022281BEB01D400581457 /* ReadActionExtTests */,
 				858022331BEB01D400581457 /* ReadActionExtUITests */,
+				858022471BEB020000581457 /* Read */,
 				8580220D1BEB01D400581457 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +132,7 @@
 				8580220C1BEB01D400581457 /* ReadActionExt.app */,
 				858022251BEB01D400581457 /* ReadActionExtTests.xctest */,
 				858022301BEB01D400581457 /* ReadActionExtUITests.xctest */,
+				858022461BEB020000581457 /* Read.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +179,17 @@
 			path = ReadActionExtUITests;
 			sourceTree = "<group>";
 		};
+		858022471BEB020000581457 /* Read */ = {
+			isa = PBXGroup;
+			children = (
+				858022481BEB020000581457 /* ActionViewController.h */,
+				858022491BEB020000581457 /* ActionViewController.m */,
+				8580224B1BEB020000581457 /* MainInterface.storyboard */,
+				8580224E1BEB020000581457 /* Info.plist */,
+			);
+			path = Read;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,10 +200,12 @@
 				858022081BEB01D400581457 /* Sources */,
 				858022091BEB01D400581457 /* Frameworks */,
 				8580220A1BEB01D400581457 /* Resources */,
+				858022551BEB020000581457 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				858022501BEB020000581457 /* PBXTargetDependency */,
 			);
 			name = ReadActionExt;
 			productName = ReadActionExt;
@@ -196,6 +248,23 @@
 			productReference = 858022301BEB01D400581457 /* ReadActionExtUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		858022451BEB020000581457 /* Read */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 858022521BEB020000581457 /* Build configuration list for PBXNativeTarget "Read" */;
+			buildPhases = (
+				858022421BEB020000581457 /* Sources */,
+				858022431BEB020000581457 /* Frameworks */,
+				858022441BEB020000581457 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Read;
+			productName = Read;
+			productReference = 858022461BEB020000581457 /* Read.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -216,6 +285,9 @@
 						CreatedOnToolsVersion = 7.1;
 						TestTargetID = 8580220B1BEB01D400581457;
 					};
+					858022451BEB020000581457 = {
+						CreatedOnToolsVersion = 7.1;
+					};
 				};
 			};
 			buildConfigurationList = 858022071BEB01D400581457 /* Build configuration list for PBXProject "ReadActionExt" */;
@@ -234,6 +306,7 @@
 				8580220B1BEB01D400581457 /* ReadActionExt */,
 				858022241BEB01D400581457 /* ReadActionExtTests */,
 				8580222F1BEB01D400581457 /* ReadActionExtUITests */,
+				858022451BEB020000581457 /* Read */,
 			);
 		};
 /* End PBXProject section */
@@ -260,6 +333,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		858022441BEB020000581457 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				858022571BEB312200581457 /* Assets.xcassets in Resources */,
+				8580224D1BEB020000581457 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +374,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		858022421BEB020000581457 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8580224A1BEB020000581457 /* ActionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -304,6 +394,11 @@
 			isa = PBXTargetDependency;
 			target = 8580220B1BEB01D400581457 /* ReadActionExt */;
 			targetProxy = 858022311BEB01D400581457 /* PBXContainerItemProxy */;
+		};
+		858022501BEB020000581457 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 858022451BEB020000581457 /* Read */;
+			targetProxy = 8580224F1BEB020000581457 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -322,6 +417,14 @@
 				8580221E1BEB01D400581457 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8580224B1BEB020000581457 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8580224C1BEB020000581457 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -477,6 +580,32 @@
 			};
 			name = Release;
 		};
+		858022531BEB020000581457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = Read/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tw.com.tungtungtsai.ReadActionExt.Read;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		858022541BEB020000581457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = Read/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tw.com.tungtungtsai.ReadActionExt.Read;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -510,6 +639,14 @@
 			buildConfigurations = (
 				858022401BEB01D400581457 /* Debug */,
 				858022411BEB01D400581457 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		858022521BEB020000581457 /* Build configuration list for PBXNativeTarget "Read" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				858022531BEB020000581457 /* Debug */,
+				858022541BEB020000581457 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

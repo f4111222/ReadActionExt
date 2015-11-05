@@ -10,6 +10,10 @@
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UITextView *textView;
+
+- (IBAction)ActionPressed:(id)sender;
+
 
 @end
 

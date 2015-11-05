@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Read.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>ReadActionExt.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>8580222F1BEB01D400581457</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>858022451BEB020000581457</key>
 		<dict>
 			<key>primary</key>
 			<true/>
